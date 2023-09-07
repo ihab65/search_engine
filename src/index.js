@@ -1,5 +1,12 @@
-// TODO: live update results as you type
-console.log("Hello, world!");
+// // TODO: live update results as you type
+
+console.log("Querying /api/search")
+fetch("/api/search", {
+    method: 'POST',
+    headers: {'Content-Type': 'text/plain'},
+    body: "bind texture to buffer"
+}).then((response) => console.log(response))
+
 // async function search(prompt) {
 //     const results = document.getElementById("results")
 //     results.innerHTML = "";
